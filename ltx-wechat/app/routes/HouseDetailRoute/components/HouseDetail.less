@@ -1,0 +1,199 @@
+@import "../../../vars.less";
+
+
+.example-enter {
+  opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.example-leave {
+  opacity: 1;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+
+.house-detail {
+  display: block;
+  padding-bottom: 100px;
+  background-color: @backgroundColor;
+  >div.big-img {
+    position: relative;
+    width: 640px;
+    height: 480px;
+    overflow: hidden;
+    img {
+
+      width: 100%;
+    }
+    >div.num {
+      width: 80px;
+      height: 50px;
+      text-align: center;
+      background-color: rgba(0, 0,0, 0.8);
+      right: 0rem;
+      bottom: 0rem;
+      line-height: 50px;
+      position: absolute;
+      color: @white;
+      font-size: 26px;
+    }
+  }
+  >div.detail {
+    padding: 14px 0rem 10px 20px;
+    line-height: 70px;
+    background: @white;
+    margin-bottom: 20px;
+    >span {
+      font-size: 36px;
+      color: @black;
+    }
+    >div {
+      font-size: 24px;
+      >img {
+        width: 20px;
+        height: 24px;
+        display: inline-block;
+        margin-right: 10px;
+      }
+      >img.more {
+        width: 19px;
+        height: 27px;
+        float: right;
+        margin-top: 18px;
+        margin-right: 20px;
+      }
+      >span {
+         font-size: 24px;
+        &.first {
+          margin-right: 10px;
+          color: gray;
+        }
+        color: @black;
+      }
+    }
+  }
+  >div.rent {
+    padding: 20px 20px 0rem 20px;
+    background: @white;
+    line-height: 26px;
+    margin-bottom: 20px;
+    >span{
+      color: @red;
+      font-size: 26px;
+
+    }
+    >div.rent-item {
+      border-bottom: 2px dashed @borderColor;
+      padding: 20px 0rem;
+      line-height: 80px;
+      height: 80px;
+      >div.data {
+        vertical-align: top;
+        display: inline-block;
+        color: @black;
+        text-align: left;
+        line-height: 80px;
+        font-size: 24px;
+        >span {
+          color: @gray;
+          font-size: 20px;
+          &:first-child {
+            color: @black;
+            font-size: 24px;
+          }
+        }
+        &.area {
+          width: 170px;
+          padding-left: 30px;
+        }
+        &.price {
+          width: 250px;
+        }
+
+      }
+      >img {
+        width: 19px;
+        height: 27px;
+        margin-top: 28px;
+        float: right;
+      }
+
+    }
+    >div.more {
+      color: @red;
+      line-height: 80px;
+      text-align: center;
+    }
+
+  }
+  >section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    color: @black;
+    >h3 {
+      color: @red;
+      margin-bottom: 3px;
+    }
+    >div {
+      line-height: 60px;
+      font-size: 26px;
+      text-indent:2em;
+      >span {
+          font-size: 26px;
+      }
+
+    }
+    >ul {
+
+      >li {
+        line-height: 60px;
+        >span {
+          display: inline-block;
+          text-align: left;
+          &:first-child {
+            line-height: 60px;
+            width: 170px;
+            color: @gray;
+          }
+
+        }
+      }
+    }
+
+  }
+  >a {
+    display: block;
+    text-align: center;
+    line-height: 100px;
+    background: @red;
+    color: @white;
+    font-size: 36px;
+    position: fixed;
+    bottom: 0px;
+    left:0px;
+    width: 100%;
+    img {
+      margin-right: 10px;
+      font-size: 36px;
+      vertical-align: -5px;
+    }
+    span {
+      font-size: 36px;
+      margin-right: 26px;
+      display: inline-block;
+    }
+    span.tel {
+      display: inline-block;
+
+    }
+  }
+
+}

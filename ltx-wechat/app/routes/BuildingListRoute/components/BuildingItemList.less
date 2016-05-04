@@ -1,0 +1,144 @@
+
+@import "../../../vars.less";
+ul.building-list-item {
+    margin-top: 160px;
+    overflow: auto;
+    background-clip: 80%;
+    >footer {
+      height: 120px;
+      color: @red;
+      font-size: 26px;
+      line-height: 120px;
+      // position: absolute;
+      width: 100%;
+      bottom: 0px;
+      left:0px;
+      text-align: center;
+      z-index: 10;
+      position: relative;
+      >div#cercle {
+        height: 40px;
+        width: 40px;
+        display: inline-block;
+        border-radius: 50%;
+        padding: 10px;
+        background: -webkit-linear-gradient(#c80000,#FFECEE);
+        animation: rotateplane 1s infinite;
+        -webkit-animation: rotateplane 1s infinite;
+        >#cercleCache {
+          height: 40px;
+          width: 40px;
+          position: absolute;
+          border-radius: 50%;
+          background-color: @backgroundColor;
+          z-index: 5;
+        }
+      }
+      @-webkit-keyframes rotateplane {
+        0% {
+          transform:rotate(0deg);
+          -webkit-transform: rotate(0deg);
+        }
+        100% {
+          transform:rotate(360deg);
+          -webkit-transform: rotate(360deg);
+        }
+      }
+      @keyframes rotateplane {
+        0% {
+          transform:rotate(0deg);
+          -webkit-transform: rotate(0deg);
+        }
+        100% {
+          transform:rotate(360deg);
+          -webkit-transform: rotate(360deg);
+        }
+      }
+    }
+    >section {
+      height: 700px;
+      background:url(../../../img/bg-pic.png) center bottom no-repeat;
+      padding: 100px 60px 0rem 60px;
+      color: @gray;
+      font-size: 26px;
+      line-height: 40px;
+      text-align: center;
+      >a {
+        display: block;
+        box-sizing: border-box;
+        height: 80px;
+        width: 200px;
+        background-color: @red;
+        font-size: 36px;
+        color: #fff;
+        text-align: center;
+        line-height: 80px;
+        border-radius: 8px;
+        margin: auto;
+        margin-top: 40px;
+        text-decoration: none;
+      }
+    }
+
+
+    >a {
+      display: block;
+      height: 400px;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      >div.white {
+        display: none;
+        position: absolute;
+        z-index: 1000;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(255,255,255,0.3);
+
+      }
+      &.Tappable-active{
+        >div.white {
+          display: block;
+        }
+      }
+
+
+      >div{
+        margin-top: -40px;
+        >img {
+
+        width: 100%;
+        }
+
+        }
+      >footer {
+        height: 80px;
+        background:-webkit-gradient(linear,  0 100%,0 0, from(rgba(0,0,0,0.5)), to(rgba(255, 255, 255,0)));
+        bottom: 0rem;
+        left: 0rem;
+        z-index: 99;
+        position: absolute;
+        width: 100%;
+        padding-top: 50px;
+        >div {
+          padding: 7px 20px;
+          line-height:26px;
+          height: 26px;
+          font-size: 26px;
+          color: @white;
+          >span.sm {
+            font-size: 22px;
+            color:#c8c8c8;
+          }
+          >span.fr {
+            float: right;
+          }
+        }
+      }
+
+    }
+
+
+}

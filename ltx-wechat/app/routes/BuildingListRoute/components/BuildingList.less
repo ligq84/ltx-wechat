@@ -1,0 +1,32 @@
+@import "../../../vars.less";
+
+div.buildingList {
+  font-size: 0rem;
+  background-color: @backgroundColor;
+
+  >header {
+    z-index: 999;
+    position: fixed;
+    top:0;
+    width: 100%;
+    left: 0;
+  }
+
+  >div.query {
+    background-color: #fff;
+    z-index: 990;
+    box-sizing: border-box;
+    position: fixed;
+    top: 90px;
+    margin-top: 90em/@dpi;
+    width: 100%;
+    left: 0;
+    vertical-align: top;
+    white-space:nowrap;
+    height: 70px;
+    font-size: 0px;
+    border-bottom: 2px solid @borderColor;
+  }
+
+
+}

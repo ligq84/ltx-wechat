@@ -1,0 +1,154 @@
+@import "../../../vars.less";
+
+
+
+div.service-main {
+
+  background-color: #e3eff9;
+  overflow:hidden;
+
+  >header {
+    height: 160px;
+    padding-top: 50px;
+    text-align: center;
+
+  }
+
+    >section {
+      box-sizing: border-box;
+      height: 300px;
+      width: 290px;
+
+      margin-left: 20px;
+      float: left;
+      background: #fff;
+      margin-bottom: 20px;
+      line-height: 60px;
+      text-align: center;
+      padding-bottom: 10px;
+      span.sm {
+        font-size: 24px;
+      }
+      span.bg {
+        font-size: 32px;
+      }
+      span.red {
+        color: #c80000;
+      }
+      >main {
+        box-sizing: border-box;
+        height: 170px;
+        border-bottom: 2px dashed @borderColor;
+        padding: 30px 0rem;
+        >img {
+          margin: auto;
+          display: block;
+          height: 110px;
+          width: auto;
+          border: 0px;
+        }
+
+      }
+
+    }
+
+}
+div.service-item {
+  padding-bottom: 140px;
+  background: #fff;
+  >header {
+    background: @red;
+    padding: 30px 50px 0px  30px;
+    >main {
+      background: #fff;
+      text-align: center;
+      line-height: 78px;
+      font-size: 36px;
+      padding-top: 30px;
+      >img {
+        width: 182px;
+        height: 112px;
+        display: block;
+        margin: auto;
+      }
+
+    }
+  }
+  >h1 {
+    font-size: 40px;
+    line-height: 70px;
+    margin-top: 30px;
+    text-align: center;
+    span.red{
+      color: @red;
+    }
+  }
+  >section {
+    padding: 0rem 20px;
+    margin-top: 70px;
+    >h2 {
+      font-weight: bold;
+      color: @red;
+      line-height: 40px;
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+    >p {
+
+      &:first-child {
+        margin-bottom: 0rem;
+        padding-bottom: 0rem;
+      }
+
+      margin-bottom: 40px;
+      font-size: 24px;
+      line-height: 50px;
+      span.red{
+        color: @red;
+      }
+    }
+  }
+  >footer {
+    background-color: @red;
+    color: #fff;
+    font-size: 36px;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+
+
+  }
+}
+
+div.service-apply {
+  padding: 110px 20px 0rem 20px;
+  >input {
+    display: block;
+    width:600px;
+    -webkit-appearance:none;
+    border: 1px solid @borderColor;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    line-height: 40px;
+    padding: 20px;
+    height: 80px;
+    border-radius: 8px;
+  }
+  >footer {
+    height: 90px;
+    line-height: 90px;
+    font-size: 36px;
+    color: #fff;
+    background-color: @red;
+    text-align: center;
+    border-radius: 8px;
+
+  }
+
+
+
+}

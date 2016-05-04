@@ -1,0 +1,156 @@
+@import "../../../vars.less";
+
+
+   div.muti-seletct {
+     color: @black;
+     box-sizing: border-box;
+     border-left: 2px solid @borderColor;
+     padding:0px 0px;
+     display: inline-block;
+     font-size: 24px;
+     line-height: 40px;
+     width: 213px;
+     height: 68px;
+     &:first-child {
+       border-left: 0px;
+
+     }
+     >span {
+       height: 100%;
+       box-sizing: border-box;
+       padding: 15px;
+       &.Tappable-active{
+         background-color: @backgroundColor;
+       }
+       display: block;
+       >img {
+         float: right;
+         width: 14px;
+         height: 14px;
+         margin-left: 20px;
+         margin-top: 13px;
+       }
+     }
+
+
+     >main {
+       position:fixed;
+       display: none;
+
+       bottom: 0;
+       left: 0;
+       top:160px;
+       background: rgba(0, 0, 0,0.8);
+       width: 100%;
+       z-index: 999;
+       padding: 0px;
+       font-size: 24px;
+       border: 0rem;
+       >section {
+         height: 400px;
+         font-size: 0rem;
+         >ul{
+
+           height: 400px;
+           overflow: auto;
+           background-color: @white;
+           -webkit-overflow-scrolling: touch;
+           >li{
+             box-sizing: border-box;
+             -webkit-overflow-scrolling: touch;
+             font-size: 24px;
+             padding-left: 20px;
+             height: 80px;
+             line-height: 78px;
+             border-bottom: 2px solid @borderColor;
+             &.active {
+               color: @red;
+               background-color: @backgroundColor;
+             }
+           }
+           &.level-one {
+             vertical-align: top;
+             display: inline-block;
+             overflow: auto;
+             width: 211px;
+             border-right: 2px solid @borderColor;
+             >li {
+               height: 80px;
+               border: 0rem;
+               border-bottom: 2px solid @borderColor;
+               &.active {
+                 background-color: @backgroundColor;
+                 color:@red;
+               }
+             }
+           }
+           &.level-two {
+             vertical-align: top;
+             display: inline-block;
+             overflow: auto;
+             width: 427px;
+           }
+
+         }
+
+       }
+       >footer {
+         position: absolute;
+         top: 400px;
+         left: 0;
+         width: 100%;
+         &.fixed {
+           position: fixed;
+           bottom: 0;
+           top:auto;
+         }
+
+         box-sizing: border-box;
+         height: 80px;
+         padding: 15px 20px;
+         line-height: 50px;
+         font-size: 24px;
+         background-color: #fff;
+         background-color: @backgroundColor;
+         >span {
+           float: left;
+           margin-right: 28px;
+         }
+         >input {
+           line-height: 46px;
+           float: left;
+           box-sizing: border-box;
+           display: block;
+           height: 50px;
+           padding-left: 14px;
+           width: 146px;
+           border: 2px solid @borderColor;
+           border-radius: 4px;
+         }
+         >div.button {
+           float: left;
+           line-height: 46px;
+           height: 50px;
+           box-sizing: border-box;
+           width: 100px;
+           background: @red;
+           color: #fff;
+           text-align: center;
+           border-radius: 4px;
+           margin-left: 10px;
+
+         }
+         >div.line {
+           float: left;
+           width: 22px;
+           margin: 0rem 14px;
+           height: 24px;
+           border-bottom: 1px solid @borderColor;
+
+         }
+       }
+
+
+     }
+
+   }
